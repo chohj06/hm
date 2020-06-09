@@ -1,7 +1,7 @@
 
 
 import discord
-
+import os
 
 
 client = discord.Client()
@@ -32,5 +32,5 @@ async def on_member_join(member):
 
 
 
-
-client.run("NzE4ODQ4NzA1NzcxMzM5Nzg3.Xt8XRQ.HQmaanKhMbtxg6N-3bIxHY7v1ts")
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
